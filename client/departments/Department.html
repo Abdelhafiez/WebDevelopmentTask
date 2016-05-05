@@ -1,0 +1,15 @@
+<template name="Department">
+	<article class="department">
+		<h3>{{name}}</h3>
+		<p>{{desc}}</p>
+		<p>
+			{{#each books}}
+				<span class="books">
+					{{name}} - {{amount}} - {{price}}
+				</span>
+				<br>
+			{{/each}}
+		</p>
+		<a href="/department/{{_id}}">View Details</a>
+	</article>
+</template>

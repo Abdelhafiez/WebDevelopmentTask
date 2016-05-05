@@ -1,0 +1,13 @@
+<template name="Departments">
+	{{> NewDepartment}}
+	<section class="departments">
+		{{#if Template.subscriptionsReady}}
+			{{#each departments}}
+				{{> Department}}
+			{{/each}}
+		{{else}}
+			<p>Loading !!!</p>
+		{{/if}}
+
+	</section>
+</template>

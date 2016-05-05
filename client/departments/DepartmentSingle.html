@@ -1,0 +1,16 @@
+<template name="DepartmentSingle">
+	<h1>Details </h1>
+	<article class="department">
+		<h3>{{department.name}}</h3>
+		<p>{{department.desc}}</p>
+		<p>
+			{{#each department.books}}
+				<span class="books">
+					{{book.name}} - {{book.amount}} - {{book.price}}
+				</span>
+				<br>
+			{{/each}}
+		</p>
+		
+	</article>
+</template>
